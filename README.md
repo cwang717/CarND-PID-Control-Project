@@ -3,6 +3,10 @@ Self-Driving Car Engineer Nanodegree Program
 
 ---
 
+## Reflection 
+
+I manually tuned the PID parameters by inpecting the `p_error`, `i_error`, and `d_error`. First, I picked a negative `K_p` such that the vehicle can steer back to the middle of the lane. Then I introduced the D component and tuned `K_d` such that we had smoother movements and fewer oscillations. In the end, I added the I component and tuned `K_i` such that the controller can deal with left-turns and right-turns on the track.
+
 ## Dependencies
 
 * cmake >= 3.5
